@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary:hsla(0, 1%, 31%, 0.66);
+    --secondary:hsla(200, 3%, 20%, 0.66);
+}
+.header {
+    background:linear-gradient(135deg,var(--primary), var(--secondary)),url(cherry-blossoms-2218781_1280.jpg);
+    position: relative;
+    background-repeat: none;
+    background-size: cover;
+    min-height: 100vh;
+}
+span {
+    color: rgb(224, 29, 172);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 80PX;
+    
+}
+header .logo {
+    color:#f7f0f0;
+    font-size: 25px;
+
+}
+header .menu {
+    display: flex;
+    align-items: center;
+}
+header .menu li {
+    margin: 0 15px;
+    list-style: none;
+}
+header .menu li a {
+    color:#f7f0f0;
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+header .menu li a:hover {
+    color:#f1199e;
+    font-size: 18px;
+}
+header .menu li a::before {
+    position: absolute;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    height: 5px;
+    border-radius: 6px;
+    transition: 0.5s;
+    background-color: #f1199e;
+}
+
+header .menu li a:hover::before {
+    width:100%;
+}
+.content{
+    margin-top: 9%;
+    margin-left: 9%;
+    color: #fff;
+}
+.content h1{
+    font-size: 65px;
+    line-height: 140px;
+    font-weight: 600;
+}
+.content p{
+    max-width: 500px;
+    line-height: 28px;
+}
+.links{
+    margin-top:30px ;
+}
+.links a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn{
+    border: 2px solid #fff;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+.btn:hover{
+    color: #eee9ec;
+    background-color: #c279a6;
+}
+.solid-left{
+    animation: solideleft 1s linear forwards;
+} @keyframes solideleft {
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+    
+}
+p.solid-left{
+    animation-delay: 1s;
+}
+.links.solid-left{
+    animation-delay: 2s;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    min-height:100vh ;
+}
+
+.tittle-section {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#c279a6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.sub-tittle-section {
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.footer{
+    background-color: #f6f1f6;
+    color: rgb(215, 21, 176);
+}
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #f58acc;
+    border-radius: 15px;
+}
